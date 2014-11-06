@@ -69,7 +69,7 @@
 #endif
 
 #if defined(OS_MACOSX)
-#define fdatasync(fd) fcntl(fd, F_FULLFETD, 0)
+#define fdatasync(fd) fcntl(fd, F_FULLFSYNC, 0)
 #endif
 
 #if defined(OS_ANDROID) && __ANDROID_API__ < 9
